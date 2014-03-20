@@ -13,7 +13,7 @@ describe Book do
   end
 
   it 'creates the book as an instance' do
-    test_book = Book.create({'title' => 'Huck Finn', 'category' => 'fiction'})
+    test_book = Book.create({'title' => 'Huck Finn', 'category' => 'fiction', 'qty' => 13})
     test_book.should be_an_instance_of Book
   end
 

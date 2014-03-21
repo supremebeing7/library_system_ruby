@@ -76,13 +76,7 @@ class Book
     results = DB.exec("SELECT * FROM category
                     JOIN books ON (category.id = books.category_id)
                     WHERE title = '#{book_title}';")
-    # if results.first == nil
-    #   cat_results = DB.exec("INSERT INTO category (name) VALUES ('#{category}') RETURNING id;")
-    #   category_name = cat_results.first['name']
-    # else
-      category_name = results.first['name']
-    # end
-    # category_name
+    puts results.first['name']
+    category_name = results.first['name']
   end
-
 end

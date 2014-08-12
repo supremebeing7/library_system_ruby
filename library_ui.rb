@@ -2,7 +2,7 @@ require './lib/book'
 require './lib/author'
 require './lib/patron'
 require 'pg'
-require 'Date'
+require 'date'
 
 DB = PG.connect({:dbname => 'library_system'})
 
